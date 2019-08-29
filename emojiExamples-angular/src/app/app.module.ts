@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmojiMartComponent } from './components/emoji-mart/emoji-mart.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { EmojiMartComponent } from './components/emoji-mart/emoji-mart.component
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    PickerModule
+    PickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

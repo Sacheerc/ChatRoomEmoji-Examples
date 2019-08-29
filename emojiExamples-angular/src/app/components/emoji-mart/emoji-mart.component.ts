@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmojiMartComponent implements OnInit {
   showEmojiPicker = false;
+  message="";
+  messageArr=[];
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +17,16 @@ export class EmojiMartComponent implements OnInit {
   toggleEmojiPicker() {
      this.showEmojiPicker = !this.showEmojiPicker;
   }
+
+  onSend(){
+    this.messageArr.push(this.message);
+    this.message="";
+  }
+
+  addEmoji(event) {
+        const text = `${this.message}${event.emoji.native}`;
+        this.message = text;
+        this.showEmojiPicker = false;
+      }
 
 }

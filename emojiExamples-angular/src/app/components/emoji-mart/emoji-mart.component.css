@@ -1,0 +1,31 @@
+.toggle-emoji{
+    background-image : url(../../../assets/smile.png);
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid rgb(196, 196, 196);
+    background-size: cover;
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+}
+
+.send-message{
+    background-image : url(../../../assets/send.png);
+    background-color: transparent;
+    padding: 10px;
+    background-size: cover;
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    border:none;
+}
+
+.send-message:hover{ 
+    height: 40px;
+    width: 40px; 
+    position: fixed;
+}
+
+.emoji-mart{
+    position: fixed
+}
