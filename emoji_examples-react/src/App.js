@@ -5,21 +5,29 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="container p-5 align-items-center">
+    <h2 class="text-center">Emoji-Mart example component</h2>
+    <div class="container  m-5 border rounded m-5 p-4">
+
+        
+        <div class="row mt-4 ">
+            <div class="col-md-10 input-group">              
+                <input class="form-control"> 
+                </input>
+                <button
+                      type="button"
+                      class="toggle-emoji"
+                            >
+                          </button>
+            </div>
+            
+        </div>
+        
     </div>
+   
+</div>
+</div>
+
   );
 }
 
