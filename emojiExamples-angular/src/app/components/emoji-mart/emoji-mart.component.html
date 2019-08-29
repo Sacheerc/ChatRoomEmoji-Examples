@@ -1,0 +1,29 @@
+<div class="container p-5 align-items-center">
+    <h2 class="text-center">Emoji-Mart example component</h2>
+    <div class="container  m-5 border rounded m-5 p-4">
+        example <br>
+        example <br>
+        example <br>
+        example <br>
+        <emoji-mart class="emoji-mart" set="emojione" (emojiSelect)="addEmoji($event)" *ngIf="showEmojiPicker" title="Pick your emoji…"></emoji-mart>
+        <div class="row mt-4">
+            <div class="col-md-10">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              (click)="toggleEmojiPicker()"
+              >
+              smile
+            </button>
+            
+            <input type="text" class="form-control" placeholder="@message">
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-secondary w-100">Send</button>
+            </div>
+        </div>
+        
+    </div>
+   
+</div>
+
