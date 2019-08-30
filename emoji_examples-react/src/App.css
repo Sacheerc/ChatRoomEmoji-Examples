@@ -20,12 +20,9 @@
   border:none;
 }
 
-.send-message:hover{ 
-  height: 40px;
-  width: 40px; 
-  position: fixed;
-}
-
 .emoji-mart{
-  position: fixed
+  position: absolute;
+  right: 33.5%;
+  margin-top: 40px;
+
 }
