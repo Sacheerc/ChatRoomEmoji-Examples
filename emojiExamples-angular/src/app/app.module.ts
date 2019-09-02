@@ -6,12 +6,14 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmojiMartComponent } from './components/emoji-mart/emoji-mart.component';
+import { ReplaceEmojisPipe } from './pipes/emoji.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmojiMartComponent
+    EmojiMartComponent,
+    ReplaceEmojisPipe
   ],
   imports: [
     BrowserModule,

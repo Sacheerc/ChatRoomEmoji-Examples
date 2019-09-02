@@ -3,7 +3,7 @@
     <div class="container  m-5 border rounded m-5 p-4">
 
         <div *ngFor="let message of messageArr" class="m-4">
-            {{message}}
+            <p [innerHTML]= "sheet !== '' ? (message | replaceEmojis:sheet:size:sheetSize:backgroundImageFn) : message"></p>
         </div>
         
         <div class="row mt-4 ">
@@ -28,7 +28,10 @@
             
         </div>
         
+        
     </div>
+    <button class="btn btn-secondary" (click)="downloadFile()">DownLoad</button>
    
 </div>
+
 
